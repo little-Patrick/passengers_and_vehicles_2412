@@ -5,7 +5,8 @@ class Park
               :price,
               :vehicles,
               :passengers,
-              :revenue
+              :revenue,
+              :patron_name
 
 
   def initialize(name, price)
@@ -14,6 +15,7 @@ class Park
     @vehicles = []
     @passengers = []
     @revenue = 0
+    # @patron_name = @passengers[:name]
   end
 
   def add_vehicle(vehicle)
